@@ -96,6 +96,11 @@ a[href^="tel:"]:before {
   margin-right: 0.5em;
 }
 
+nav {display: none;}
+nav > li {
+    display: inline-block;
+}
+
 .screen {
     position: relative;
 }
