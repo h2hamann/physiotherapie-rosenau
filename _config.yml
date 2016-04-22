@@ -1,3 +1,4 @@
 baseurl: /physiotherapie-rosenau
 exclude: ['README.md']
+permalink: pretty
 
