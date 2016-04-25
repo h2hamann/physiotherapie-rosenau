@@ -1,0 +1,25 @@
+{
+  "name": "physiotherapie-rosenau",
+  "version": "1.0.0",
+  "description": "Website für Physiotherapie Rosenau",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h2hamann/physiotherapie-rosenau.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h2hamann/physiotherapie-rosenau/issues"
+  },
+  "homepage": "https://github.com/h2hamann/physiotherapie-rosenau#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.4",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "lodash": "^4.11.1"
+  }
+}
