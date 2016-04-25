@@ -1,10 +1,19 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
+#  Main Sass-File for Physiotherapie Rosenau
 ---
 
 // Imports
 @import "reset";
 @import "base";
 @import "typo";
+@import "nav";
+@import "branding";
 @import "layout";
+@import "columns";
+@import "imprint";
+
+
+
+
+
 

@@ -1,0 +1,16 @@
+@media all and (min-width: 800px) { 
+    .two-cols .pseudo-column {
+        float: left;
+        width: 50%;
+        padding-right: 2.5vw;
+    }
+    .two-cols .pseudo-column + .pseudo-column {
+        padding-right: 0;
+        padding-left: 2.5vw;
+    }
+    .two-cols::after {
+        clear: both;
+       content: "";
+       display: table;
+    }
+}

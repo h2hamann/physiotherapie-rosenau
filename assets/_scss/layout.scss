@@ -1,48 +1,5 @@
-nav {display: none;}
-nav > li {
-    display: inline-block;
-}
-
 .screen {
     position: relative;
-}
-
-header h1 {
-    width: 430px;
-    margin-left: 3em;
-    margin-top: 1em;
-    position: relative;
-}
-header h1 img {
-    width: 430px;
-    max-width: 100%;
-    -ms-transform: scale(1.25);
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    -moz-transform: scale(1.25);
-}
-
-@media all and (max-width: 579px) { 
-    header h1 {
-        width: 120px;
-        margin: 1em auto 0 auto;
-    }
-    header h1 img {
-        width: 120px;
-    }
-}
-
-
-@media all and (min-width: 1024px) {
-   header h1 img {
-        -ms-transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        left: 100px;
-        top: 30px;
-        position: relative; 
-    }
 }
 
 @media all and (min-width: 579px) { 
@@ -87,7 +44,8 @@ header h1 img {
 .information p:last-child {
     margin-bottom: 0rem;
 }
-        .profile-text {
+
+.profile-text {
     max-width: 70rem;
     margin: auto;
     padding: 2rem;
@@ -95,6 +53,7 @@ header h1 img {
 .profile-text p {
     font-size: 1em;
 }        
+
 @media all and (min-width: 579px) { 
     .profile-text p {
         font-size: 1.5em;
@@ -132,10 +91,6 @@ header h1 img {
     .profile-text {
         position: absolute;
         width: 100%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-        -moz-transform: translateY(-50%) translateX(-50%);
-        -ms-transform: translateY(-50%) translateX(-50%);
-        -o-transform: translateY(-50%) translateX(-50%);
         transform: translateY(-50%) translateX(-50%);
         max-width: 80rem;
         top: 55%;
@@ -186,28 +141,5 @@ header h1 img {
         font-size: 2.5em;
     }
 }
-.imprint {
-    max-width: 70rem;
-    margin: auto;
-    padding: 2rem;
-}
-.imprint p > img {
-    max-width: 100%;
-    height: auto !important;
-}
-@media all and (min-width: 800px) { 
-    .two-cols .pseudo-column {
-        float: left;
-        width: 50%;
-        padding-right: 2.5vw;
-    }
-    .two-cols .pseudo-column + .pseudo-column {
-        padding-right: 0;
-        padding-left: 2.5vw;
-    }
-    .two-cols::after {
-        clear: both;
-       content: "";
-       display: table;
-    }
-}
+
+

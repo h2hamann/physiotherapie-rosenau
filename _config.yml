@@ -3,5 +3,6 @@ exclude: ['README.md']
 permalink: pretty
 sass:
   sass_dir: /assets/_scss
-  style: compressed
-  
+  #style: compressed
+gems:
+  - octopress-autoprefixer  
