@@ -2,3 +2,6 @@ _site
 *~
 *.swp
 *.swo
+.sass-cache
+.DS_Store
+.ruby-version
