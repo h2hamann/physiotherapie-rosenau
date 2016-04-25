@@ -1,0 +1,213 @@
+nav {display: none;}
+nav > li {
+    display: inline-block;
+}
+
+.screen {
+    position: relative;
+}
+
+header h1 {
+    width: 430px;
+    margin-left: 3em;
+    margin-top: 1em;
+    position: relative;
+}
+header h1 img {
+    width: 430px;
+    max-width: 100%;
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+}
+
+@media all and (max-width: 579px) { 
+    header h1 {
+        width: 120px;
+        margin: 1em auto 0 auto;
+    }
+    header h1 img {
+        width: 120px;
+    }
+}
+
+
+@media all and (min-width: 1024px) {
+   header h1 img {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        left: 100px;
+        top: 30px;
+        position: relative; 
+    }
+}
+
+@media all and (min-width: 579px) { 
+    .screen {
+        height: 100%
+    }
+    header {
+        left: 0;
+        right: 0;
+        z-index: 50;
+        position: absolute;
+        top: 50px;
+        height: 13rem;
+    }
+    article {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .information {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
+    .profile {
+        padding-top: 13rem;
+    }
+
+}
+
+.information p {
+    margin-bottom: 1rem;
+}
+.information p:last-child {
+    margin-bottom: 0rem;
+}
+        .profile-text {
+    max-width: 70rem;
+    margin: auto;
+    padding: 2rem;
+}
+.profile-text p {
+    font-size: 1em;
+}        
+@media all and (min-width: 579px) { 
+    .profile-text p {
+        font-size: 1.5em;
+    }
+    .profile-text {
+        padding: 6rem;
+    }
+}
+
+.contact {
+    padding: 0 2rem 2rem 2rem;
+}
+.contact .contact-left, 
+.contact .contact-right {
+    max-width: 67rem;
+    margin: auto;
+}
+.contact div {
+    padding-bottom: 0.5rem;
+}
+.contact span {
+    display: block;
+}
+@media all and (min-width: 1024px) and (min-height: 600px) { 
+    .profile {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+    }
+    .profile-text {
+        position: absolute;
+        width: 100%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        -moz-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+        -o-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+        max-width: 80rem;
+        top: 55%;
+        left: 50%;
+    }
+    .profile-text p {
+        padding: 0;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 2rem;
+    }
+    .contact .contact-left, 
+    .contact .contact-right {
+        position: fixed;
+        bottom: 0;
+        padding: 3rem;
+    }
+    .contact .contact-left {
+        left: 0;
+    }
+    .contact .contact-right {
+        right: 0;
+    }
+    .contact div {
+        padding: 0;
+    }
+    .contact .contact-left div, 
+    .contact .contact-right div {
+        display: inline-block;
+        padding-right: 0.5rem;
+    }
+    .contact .contact-left span, 
+    .contact .contact-right span {
+        display: inline-block;
+        padding-bottom: 0.3em;
+        font-family:'Frutiger LT W01_57 Condensed';
+    }
+    .contact .contact-left span {
+        margin-right: 0.6em;
+    }
+    .contact .contact-right span {
+        margin-left: 0.6em;
+    }
+
+}
+@media all and (min-width: 1280px) and (min-height: 600px) { 
+    .profile-text p {
+        font-size: 2.5em;
+    }
+}
+.imprint {
+    max-width: 70rem;
+    margin: auto;
+    padding: 2rem;
+}
+.imprint p > img {
+    max-width: 100%;
+    height: auto !important;
+}
+@media all and (min-width: 800px) { 
+    .two-cols .pseudo-column {
+        float: left;
+        width: 50%;
+        padding-right: 2.5vw;
+    }
+    .two-cols .pseudo-column + .pseudo-column {
+        padding-right: 0;
+        padding-left: 2.5vw;
+    }
+    .two-cols::after {
+        clear: both;
+       content: "";
+       display: table;
+    }
+}
