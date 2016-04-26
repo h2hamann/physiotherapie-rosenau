@@ -12,7 +12,7 @@
         z-index: 50;
         position: absolute;
         top: 50px;
-        height: 13rem;
+        height: 13.288em;
     }
     article {
         width: 100%;
@@ -33,22 +33,22 @@
         -webkit-overflow-scrolling: touch;
     }
     .profile {
-        padding-top: 13rem;
+        padding-top: 13.288em;
     }
 
 }
 
 .information p {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 .information p:last-child {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 .profile-text {
-    max-width: 70rem;
+    max-width: 74.551em;
     margin: auto;
-    padding: 2rem;
+    padding: 2.369em;
 }
 .profile-text p {
     font-size: 1em;
@@ -56,23 +56,23 @@
 
 @media all and (min-width: 579px) { 
     .profile-text p {
-        font-size: 1.5em;
+        font-size: 1.333em;
     }
     .profile-text {
-        padding: 6rem;
+        padding: 5.61em;
     }
 }
 
 .contact {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2.369em 2.369em 2.369em;
 }
 .contact .contact-left, 
 .contact .contact-right {
-    max-width: 67rem;
+    max-width: 67em;
     margin: auto;
 }
 .contact div {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.563em;
 }
 .contact span {
     display: block;
@@ -92,21 +92,21 @@
         position: absolute;
         width: 100%;
         transform: translateY(-50%) translateX(-50%);
-        max-width: 80rem;
+        max-width: 80em;
         top: 55%;
         left: 50%;
     }
     .profile-text p {
         padding: 0;
         text-align: center;
-        font-size: 2em;
-        margin-bottom: 2rem;
+        font-size: 1.777em;
+        margin-bottom: 2.369em;
     }
     .contact .contact-left, 
     .contact .contact-right {
         position: fixed;
         bottom: 0;
-        padding: 3rem;
+        padding: 3.157em;
     }
     .contact .contact-left {
         left: 0;
@@ -120,25 +120,25 @@
     .contact .contact-left div, 
     .contact .contact-right div {
         display: inline-block;
-        padding-right: 0.5rem;
+        padding-right: 0.563em;
     }
     .contact .contact-left span, 
     .contact .contact-right span {
         display: inline-block;
-        padding-bottom: 0.3em;
+        padding-bottom: 0.317em;
         font-family:'Frutiger LT W01_57 Condensed';
     }
     .contact .contact-left span {
-        margin-right: 0.6em;
+        margin-right: 0.563em;
     }
     .contact .contact-right span {
-        margin-left: 0.6em;
+        margin-left: 0.563em;
     }
 
 }
 @media all and (min-width: 1280px) and (min-height: 600px) { 
     .profile-text p {
-        font-size: 2.5em;
+        font-size: 2.369em;
     }
 }
 

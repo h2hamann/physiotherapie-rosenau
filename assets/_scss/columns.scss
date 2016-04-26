@@ -8,6 +8,14 @@
         padding-right: 0;
         padding-left: 2.5vw;
     }
+    
+    .two-cols.two-cols-33-66 .pseudo-column {
+        width: 33%;
+    }
+    .two-cols.two-cols-33-66 .pseudo-column + .pseudo-column {
+        width: 66%;
+    }
+
     .two-cols::after {
         clear: both;
        content: "";

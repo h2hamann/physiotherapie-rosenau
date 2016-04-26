@@ -3,10 +3,15 @@
 $gruen: #b5d1c0;
 $hell-gruen: #c1d2c7;
 $braun: #7a726f;
+$link: #7a726f; 
+$link-border: rgba(122,114,111,0.5);
+$link-hover: #3685b5; 
 
 
-*, *::before, *::after {
+
+* {
     box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 html {
     box-sizing: border-box;
@@ -15,34 +20,37 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 body {
-    font-size: 100%;
-    line-height: 1.5;
-    height: 100%;
-    margin: 0;
-
-    -webkit-tap-highlight-color: transparent;
-    
+    height: 100%;  
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizelegibility;
-
-    -webkit-text-size-adjust:100%; 
-    -ms-text-size-adjust:100%;
+    -moz-osx-font-smoothing: grayscale;    
 }
 
 
 /* Links */
 a img 	{ border: none !important; }
-a:focus	{ outline: none !important; }
+a:active, a:hover { outline: none !important; }
 
-a:link		{ color: $braun; text-decoration: none; }
-a:visited 	{ color: $braun; text-decoration: none; }
-a:hover 	{ color: $braun; text-decoration: none; }
-a:active	{ color: $braun; text-decoration: none; }
+a {
+    background-image: linear-gradient(to bottom,$link-border 75%,$link-border 75%);
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    text-decoration: none;
+    background-position: 0 99.9%;
+    color: $link;
+}
+
+a:hover {
+    color: $link-hover; 
+    background-image: linear-gradient(to bottom,$link-hover 75%,$link-hover 75%);
+}
+
+a[href^="tel:"] {
+    background-image: none;
+}
 
 a[href^="tel:"]:before {
-  content: "\260e";
-  margin-right: 0.5em;
+    content: "\260e";
+    padding-right: 0.238em;
 }
 
 
