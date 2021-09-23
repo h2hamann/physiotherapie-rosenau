@@ -12,7 +12,9 @@ html {
     font-weight: normal;
     font-style: normal;
     color: $braun;
-    background-color: $hell-gruen;
+    //background-color: $hell-gruen;
+    background-color: white;
+    border: 10px solid $hell-gruen;
 }
 
 strong {
